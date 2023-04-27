@@ -4,6 +4,7 @@ from django.db import models
 
 
 class Registration(models.Model):
+    id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=200)
     contact = models.CharField(max_length=200)
@@ -11,6 +12,7 @@ class Registration(models.Model):
 
 
 class Course(models.Model):
+    id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=200)
     fees = models.IntegerField()
     duration = models.CharField(max_length=300)
@@ -21,6 +23,7 @@ class Course(models.Model):
 
 
 class AddStudents(models.Model):
+    id = models.BigAutoField(primary_key=True)
     sname = models.CharField(max_length=100)
     semail = models.EmailField(max_length=100)
     smobile = models.CharField(max_length=10)
@@ -40,6 +43,7 @@ class AddStudents(models.Model):
 
 
 class Teacher(models.Model):
+    id = models.BigAutoField(primary_key=True)
     teachername = models.CharField(max_length=300)
     employeesid = models.IntegerField()
     teacheremail = models.CharField(max_length=200)

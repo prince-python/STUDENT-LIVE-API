@@ -63,7 +63,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "https://student-dbase-by-rahul.netlify.app/",
     "https://studentmanagementapp.netlify.app/",
-    "https://effortless-zuccutto-e1e7b7.netlify.app/"
+    "https://effortless-zuccutto-e1e7b7.netlify.app/",
 ]
 
 CORS_ALLOWED_ALL_ORIGINS=True
